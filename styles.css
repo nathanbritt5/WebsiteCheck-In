@@ -293,6 +293,7 @@ text-align: center;
 
 .record img{
     margin-bottom: -4px;
+    margin-top: -0.4px;
 }
 
 @media (max-height: 360px){
