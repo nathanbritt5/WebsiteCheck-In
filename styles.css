@@ -24,18 +24,6 @@ body{
     }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1024px) and (orientation: landscape) {
-    body {
-        background-image: url(images/PolaroidWall.jpg);
-    }
-}
-
-@media screen and (min-width: 1025px) and (orientation: portrait) {
-    body {
-	    background-image: url(images/RecordWall.jpg);
-   }
-}
-
 @media screen and (min-width: 1025px) and (orientation: landscape) {
     body {
 	    background-image: url(images/RecordWall.jpg);
