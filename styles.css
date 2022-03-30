@@ -1,27 +1,35 @@
-:root { background-attachment: fixed; }
-
 body{
+    margin: 0;
+}
+
+.header-background{
     margin: 0;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-bottom: -100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: -999;
 }
 
 @media screen and (max-width: 700px) {
-    body {
+    .header-background {
         background-image: url(images/Records.jpg);
     }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
-    body {
+    .header-background {
         background-image: url(images/PolaroidWall.jpg);
     }
 }
 
 @media screen and (min-width: 1025px){
-    body {
+    .header-background {
 	    background-image: url(images/RecordWall.jpg);
    }
 }
