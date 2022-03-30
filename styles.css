@@ -1,3 +1,5 @@
+:root { background-attachment: fixed; }
+
 body{
     margin: 0;
     background-position: center center;
@@ -6,25 +8,19 @@ body{
     background-size: cover;
 }
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 700px) {
     body {
         background-image: url(images/Records.jpg);
     }
 }
 
-@media (max-width: 700px) and (orientation: landscape) {
-    body {
-        background-image: url(images/Records.jpg);
-    }
-}
-
-@media screen and (min-width: 701px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 701px) and (max-width: 1024px) {
     body {
         background-image: url(images/PolaroidWall.jpg);
     }
 }
 
-@media screen and (min-width: 1025px) and (orientation: landscape) {
+@media screen and (min-width: 1025px){
     body {
 	    background-image: url(images/RecordWall.jpg);
    }
