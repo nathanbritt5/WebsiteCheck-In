@@ -7,6 +7,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
     height: 100vh;
     margin-bottom: -100vh;
     position: -webkit-sticky;
@@ -17,19 +18,19 @@ body{
 
 @media screen and (max-width: 700px) {
     .header-background {
-        background-image: url(images/Records.jpg);
+        background-image: url(../images/Records.jpg);
     }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .header-background {
-        background-image: url(images/PolaroidWall.jpg);
+        background-image: url(../images/PolaroidWall.jpg);
     }
 }
 
 @media screen and (min-width: 1025px){
     .header-background {
-	    background-image: url(images/RecordWall.jpg);
+	    background-image: url(../images/RecordWall.jpg);
    }
 }
 
@@ -69,6 +70,7 @@ nav ul li a.active {
 }
 
 
+/*what even are these.......................*/
 
 .nav-label{
     margin-bottom: 10px;
@@ -78,13 +80,14 @@ nav ul li a.active {
 
 
 
+
 .body-background{
     height: 1000px;
     width: 100%;
     background-color: #ffe8a9da;
 }
 
-
+/*?.........................................*/
 
 
 
@@ -119,36 +122,36 @@ nav ul li a.active {
 
 
 
-header{
+.record-stack{
     width: 100vw;
     z-index: 1;
 }
 
 @media (max-height: 360px){
-    header {
+    .record-stack {
         margin-top: calc(50vh - 50px);
-        height: calc(125vh + 200px);
+        height: calc(150vh + 250px);
     }
 }
 
 @media (min-height: 361px) and (max-height: 600px){
-    header {
+    .record-stack {
         margin-top: calc(50vh - 75px);
-        height: calc(125vh + 300px);
+        height: calc(150vh + 375px);
     }
 }
 
 @media (min-height: 601px){
-    header {
+    .record-stack {
         margin-top: calc(50vh - 100px);
-        height: calc(125vh + 400px);
+        height: calc(150vh + 500px);
     }
 }
 
 @media (max-width: 700px) and (min-height: 601px){
-    header {
+    .record-stack {
         margin-top: calc(50vh - 75px);
-        height: calc(125vh + 300px);
+        height: calc(150vh + 75px);
     }
 }
 
@@ -203,12 +206,11 @@ header{
   }
 
 
-
 @media (max-height: 360px){
     .sleeve {
         top: calc(50vh - 50px);
         margin-top: -100px;
-        height: calc(75vh + 150px);
+        height: calc(100vh + 200px);
     }
 }
 
@@ -216,7 +218,7 @@ header{
     .sleeve {
         top: calc(50vh - 75px);
         margin-top: -150px;
-        height: calc(75vh + 225px);
+        height: calc(100vh + 300px);
     }
 }
 
@@ -224,7 +226,7 @@ header{
     .sleeve {
         top: calc(50vh - 100px);
         margin-top: -200px;
-        height: calc(75vh + 300px);
+        height: calc(100vh + 400px);
     }
 }
 
@@ -232,7 +234,7 @@ header{
     .sleeve {
         top: calc(50vh - 75px);
         margin-top: -150px;
-        height: calc(75vh + 225px);
+        height: calc(100vh + 75px);
     }
 }
 
@@ -264,7 +266,6 @@ header{
     }
 }
 
-
 .record{
 position: -webkit-sticky;
 position: sticky;
@@ -275,28 +276,28 @@ text-align: center;
 @media (max-height: 360px){
     .record {
         top: calc(50vh - 50px);
-        margin-top: calc(-100vh - 100px);
+        margin-top: calc(-100vh - 200px);
     }
 }
 
 @media (min-height: 361px) and (max-height: 600px){
     .record {
         top: calc(50vh - 75px);
-        margin-top: calc(-100vh - 150px);
+        margin-top: calc(-100vh - 300px);
     }
 }
 
 @media (min-height: 601px){
     .record {
         top: calc(50vh - 100px);
-        margin-top: calc(-100vh - 200px);
+        margin-top: calc(-100vh - 400px);
     }
 }
 
 @media (max-width: 700px) and (min-height: 601px){
     .record {
         top: calc(50vh - 75px);
-        margin-top: calc(-100vh - 150px);
+        margin-top: calc(-100vh - 75px);
     }
 }
 
@@ -330,9 +331,7 @@ text-align: center;
 }
 
 .player{
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    background-color: rgba(26, 26, 26, 0.253);
+    background-color: transparent;
     z-index: 1;
     text-align: center;
 }
