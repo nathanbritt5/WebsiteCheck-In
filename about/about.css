@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+}
+
+/* Background changes with resizing*/
+
+.header-background{
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    height: 100vh;
+    margin-bottom: -100vh;
+    z-index: -999;
+}
+
+@media screen and (max-width: 700px) {
+    .header-background {
+        background-image: url(../images/HunterEyeCuriosities.jpeg);
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+    .header-background {
+        background-image: url(../images/Hunter.jpg);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .header-background {
+	    background-image: url(../images/HunterAndCamGuitar.jpg);
+   }
+}
+
+/* Nav Bar */
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: 100vh;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffce48;
+}
+  
+nav ul li {
+    float: right;
+    width: 20%;
+}
+  
+nav ul li a {
+    display: block;
+    color: #FF624C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav ul li a:hover:not(.active) {
+    background-color: #459195;
+}
+  
+nav ul li a.active {
+    background-color: #459195;
+}
+
+.nav-label{
+    margin-bottom: 10px;
+    margin-top: -10px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.body-background{
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: -888;
+    margin-bottom: -100vh;
+}
+
+.fa-user-group{
+    color:#FF624C;
+    position: static;
+}
+  
+.fa-compact-disc{
+    color: #FF624C;
+    position: static;
+}
+  
+.fa-circle-question{
+    color: #FF624C;
+    position: static;
+}
+  
+.fa-envelope{
+    color: #FF624C;
+    position: static;
+}
+
+/* Header */
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    letter-spacing: 10px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 1;
+    text-shadow: 0px 0px 30px #000000;
+}
+
+/* Main content*/
+
+p{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 30px;
+}
+
+.from{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .from {
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+    .from {
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .from {
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        font-size: 50px;
+   }
+}
+
+.top-text{
+    text-align: left;
+}
+
+.top-image{
+    text-align: right;
+}
+
+.middle-text{
+    text-align: right;
+}
+
+.middle-image{
+    text-align: left;
+}
+
+.bottom-text{
+    text-align: left;
+}
+
+.bottom-image{
+    text-align: right;
+}

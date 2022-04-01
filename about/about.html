@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta name="author" content="Nathan Britt and Cecily Davis"/>
+		<link rel="shortcut icon" href="../images/Logo.png"/>
+		<link rel="stylesheet" href="about.css"/>
+		<script src="https://kit.fontawesome.com/4077adc3ea.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<div class="header-background"></div>
+
+		<nav>
+			<ul>
+				<li><a href="#"><div class="nav-label">Contact</div><i class="fa-solid fa-envelope fa-xl"></i></a></li>
+				<li><a href="#"><div class="nav-label">FAQ's</div><i class="fa-solid fa-circle-question fa-xl"></i></a></li>
+				<li><a href="#"><div class="nav-label">Products</div><i class="fa-solid fa-compact-disc fa-xl"></i></a></li>
+				<li><a href="../about/about.html"><div class="nav-label">About</div><i class="fa-solid fa-user-group fa-xl"></i></a></li>
+				<li><a href="#"><div class="nav-label">Page 5</div><i class=></i></a></li>
+			</ul>
+		</nav>
+
+	    <div class="body-background"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                $('.header-background').css({
+                    filter:"blur(" + (scroll/40) + "px)"
+                })
+            })
+        </script>
+
+        <div class="center-text">Our Story</div>
+
+<hr>
+        <p>
+            Ideas:<br>
+        Img left "Hunter: Owner and Co-Founder"<br>
+        "Cam: Co-Founder and whatever" Img right
+        </p>
+<hr>
+
+        <div class="from">
+            <h1>FROM HUNTER:</h1>
+        </div>
+
+        <!--Top-->
+    
+        <div class="top-image">
+            <img src="../images/HunterAndTupac.jpg">
+        </div>
+
+        <div class="top-text">
+            <p>
+            "For starters, I saw a void in the music market
+            place in Jackson, TN. My entreprenurial nature
+            kicked in, and I decided to serve as a vinyl
+            dealer inside my friend's bookstore downtown..."
+            </p>
+        </div>
+    
+        <!--Middle-->
+    
+        <div class="middle-image">
+          <img src="../images/WholeStore.jpg">
+        </div>
+
+        <div class="middle-text">
+            <p>
+            "Once he moved locations, I started renting his old 
+            spot and became the only brick and mortar record shop 
+            between Memphis and Nashville."
+            </p>
+        </div>
+    
+        <!--Bottom-->
+    
+        <div class="bottom-image">
+          <img src="../images/HunterAndCamGuitar2.jpg">
+        </div>
+
+        <div class="bottom-text">
+            <p>
+            "Music on vinyl seems to transcend age and gender. 
+            We believe in being reverential to music on a physical
+            format such as vinyl while also acting as purveyors 
+            of the album as an artform."
+            </p>
+        </div>
+
+	</body>
+</html>
