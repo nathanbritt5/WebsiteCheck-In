@@ -18,6 +18,23 @@ body{
     z-index: -9999;
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    background-color: #ead392;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader img{
+    width: 250px;
+    height: 250px;
+}
+
 @media screen and (max-width: 700px) {
     .header-background {
         background-image: url(../images/HunterEyeCuriosities.jpeg);

@@ -21,6 +21,26 @@ body{
     z-index: -999;
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    background-color: #ffeab0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader img{
+    width: 250px;
+    height: 250px;
+}
+
+
+/*Setting Background to fit browser window*/
+
 @media screen and (max-width: 700px) {
     .header-background {
         background-image: url(images/Records.jpg);
@@ -40,26 +60,17 @@ body{
 }
 
 
-
-/*what even are these.......................*/
+/*Content*/
 
 .body-background{
     height: 1000px;
     width: 100%;
-    background-color: #ead392;
+    background-color: #ffeab0;
 }
 
-/*?.........................................*/
 
 
-
-
-
-
-
-
-
-
+/*Record Animation: Scroll*/
 
 .record-stack{
     width: 100vw;
@@ -96,10 +107,7 @@ body{
 
 
 
-
-
-
-
+/*Record Animation: Logo Cover*/
 
 .cover {
     z-index: -1;
@@ -137,12 +145,15 @@ body{
 }
 
 
-  .sleeve {
+
+/*Record Animation: Sleeve*/
+
+.sleeve {
     position: -webkit-sticky;
     position: sticky;
     z-index: -2;
     text-align: center;
-  }
+}
 
 
 @media (max-height: 360px){
@@ -204,6 +215,9 @@ body{
         height: 150px;
     }
 }
+
+
+/*Record Animation: Record*/
 
 .record{
 position: -webkit-sticky;
@@ -268,6 +282,10 @@ text-align: center;
         height: 150px;
     }
 }
+
+
+
+/*Record Animation: Record Player*/
 
 .player{
     background-color: transparent;
@@ -381,6 +399,9 @@ text-align: center;
     }
 }
 
+
+/*Scroll to top*/
+
 #BtnContain{
     display: none;
     position: fixed;
@@ -401,6 +422,9 @@ text-align: center;
     cursor: pointer;
 }
 
+
+/*NavBar*/
+
 #myBtn {
     width: auto;
     height: 80px;
@@ -408,11 +432,11 @@ text-align: center;
     filter: invert(100%);
     opacity: 1;
     transition: opacity .2s linear;
-  }
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     opacity: 0;
-  }
+}
 
 #menu li a {
     text-decoration: none;
@@ -422,23 +446,23 @@ text-align: center;
     font-size: 1.5em;
     font-weight: 400;
     transition: 200ms;
-  }
+    }
 #menu li a:hover {
     color: #ffce48;
-  }
-  ul {
+}
+ul {
     padding: 0;
     list-style-type: none;
-  }
+}
 
-  nav {
+nav {
     background-color: transparent;
     height: 65px;
     position: fixed;
     top: 0;
     width: 80px;
     float: right;
-  }
+}
 
 .navbox{
     overflow: hidden;
@@ -450,17 +474,16 @@ text-align: center;
     top: 0;
 }
   
-  #menuToggle {
+#menuToggle {
     position: fixed;
     top: 25px;
     right: 25px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
-  }
+}
   
-  #menuToggle input
-  {
+#menuToggle input {
     display: flex;
     width: 34px;
     height: 32px;
@@ -470,10 +493,9 @@ text-align: center;
     z-index: 2;
     margin-top: -10px;
     margin-left: -2px;
-  }
+}
   
-  #menuToggle span
-  {
+#menuToggle span {
     display: flex;
     width: 28px;
     height: 2.5px;
@@ -487,38 +509,33 @@ text-align: center;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
-  }
+}
   
-  #menuToggle span:first-child
-  {
+#menuToggle span:first-child {
     transform-origin: 0% 0%;
-  }
+}
   
-  #menuToggle span:nth-last-child(2)
-  {
+#menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
-  }
+}
   
-  #menuToggle input:checked ~ span
-  {
+#menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-3.5px, -1px);
     background: #36383F;
     box-shadow: none;
-  }
-  #menuToggle input:checked ~ span:nth-last-child(3)
-  {
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
-  }
+}
   
-  #menuToggle input:checked ~ span:nth-last-child(2)
-  {
+#menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
-  }
+}
   
-  #menu
-  {
+#menu {
     position: fixed;
     height: calc(100vh - 100px);
     box-shadow: 0 0 10px #5b5c5e;
@@ -531,9 +548,9 @@ text-align: center;
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
+}
 
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     #menu {
         width: calc(100vw - 98px);
         margin-left: calc(-100vw + 54px);
@@ -546,13 +563,12 @@ text-align: center;
         margin-left: -345px;
     }
 }
-  #menu li
-  {
+
+#menu li {
     padding: 10px 0;
     transition-delay: 2s;
-  }
+}
   
-  #menuToggle input:checked ~ ul
-  {
+#menuToggle input:checked ~ ul {
     transform: none;
-  }
+}
