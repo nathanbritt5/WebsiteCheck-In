@@ -11,20 +11,30 @@
 
 	<body>
 
-		<div class="header-background"></div>
+        <div class="header-background"></div>
 
-		<nav>
-			<ul>
-				<li><a href="#"><div class="nav-label">Contact</div><i class="fa-solid fa-envelope fa-xl"></i></a></li>
-				<li><a href="#"><div class="nav-label">FAQ's</div><i class="fa-solid fa-circle-question fa-xl"></i></a></li>
-				<li><a href="#"><div class="nav-label">Products</div><i class="fa-solid fa-compact-disc fa-xl"></i></a></li>
-				<li><a href="../about/about.html"><div class="nav-label">About</div><i class="fa-solid fa-user-group fa-xl"></i></a></li>
-				<li><a href="#"><div class="nav-label">Page 5</div><i class=></i></a></li>
-				<li><a href="../home/index.html"><div class="nav-label">Home</div><i class=></i></a></li>
-			</ul>
-		</nav>
-
-	    <div class="body-background"></div>
+        <a class="logo-top" href="../home/index.html"></a>
+        
+        <div class="navbox">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                      <input type="checkbox"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <ul id="menu">
+                      <li><a href="../home/index.html">Home</a></li>
+                      <li><a href="../about/about.html">About</a></li>
+                      <li><a href="#">Info</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                   </div>
+                  </nav>
+            </div>
+        
+            <div id="BtnContain">
+            <input type="image" src="../images/Top.png" onclick="topFunction()" id="myBtn" title="Go to top"></input>
+            </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script type="text/javascript">
@@ -35,8 +45,29 @@
                 })
             })
         </script>
+        <script>
+            var mybutton = document.getElementById("BtnContain");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+            
+            document.body.scrollTo({top: 0, behavior: 'smooth'});
+            document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+            }
+                    </script>
 
         <div class="center-text">Our Story</div>
+
+            <div class="body-background"></div>
 
 <hr>
         <p>
