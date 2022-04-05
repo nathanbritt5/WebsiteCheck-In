@@ -37,25 +37,25 @@ body{
 
 @media screen and (max-width: 700px) {
     .header-background {
-        background-image: url(../images/HunterEyeCuriosities.jpeg);
+        background-image: url(../images/JewelryBox.jpg);
     }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .header-background {
-        background-image: url(../images/Hunter.jpg);
+        background-image: url(../images/Fisheye.jpg);
     }
 }
 
 @media screen and (min-width: 1025px) {
     .header-background {
-	    background-image: url(../images/HunterAndCamGuitar.jpg);
+	    background-image: url(../images/RecordShelfWall.jpg);
    }
 }
 
 .body-background{
     width: 100%;
-    background-color: white;
+    background-color: #ead392;
     height: 200vh;
     margin-bottom: -100vh;
     position: -webkit-sticky;
@@ -298,6 +298,24 @@ body{
     text-shadow: 0px 0px 30px #000000;
 }
 
+/* Header */
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    letter-spacing: 10px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 1;
+    text-shadow: 0px 0px 30px black;
+}
+
 /* Main content*/
 
 p{
@@ -307,58 +325,30 @@ p{
 
 .from{
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    width: 10vw;
-    font-size: 1%;
+    font-size: 50px;
 }
 
 @media screen and (max-width: 700px) {
     .from {
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-        font-size: 20px;
+        font-size: 50px;
     }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .from {
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-        font-size: 35px;
+        font-size: 50px;
     }
 }
 
 @media screen and (min-width: 1025px) {
     .from {
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-        font-size: 35px;
+        font-size: 50px;
    }
 }
 
-.top-text{
-    text-align: left;
-    text-shadow: #ffce48 2px 2px 1px;
-}
-
-.top-image img{
-    float: right;
-    width: 50vw;
-    height: auto;
-}
-
-.middle-text{
-    text-align: right;
-}
-
-.middle-image img{
-    float: left;
-    width: 50vw;
-    height: auto;
-}
-
-.bottom-text{
-    text-align: left;
-}
-
-.bottom-image img{
-    float: right;
-    width: 50vw;
-    height: auto;
+img{
+    border-radius: 50%;
 }

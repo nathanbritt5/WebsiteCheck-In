@@ -65,7 +65,7 @@ body{
 .body-background{
     height: 1000px;
     width: 100%;
-    background-color: #ffeab0;
+    background-color: #ffffff;
 }
 
 
@@ -369,6 +369,17 @@ text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 9999;
+    box-shadow: red 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-top img{
+    height: 12%;
+    width: 7%;
+    box-shadow: rgb(13, 0, 255) 0 0 10px;
+
 }
 
 @media (max-height: 360px){
@@ -501,10 +512,10 @@ nav {
     height: 2.5px;
     margin-bottom: 4.2px;
     position: relative;
-    background: #ffffff;
+    background: #FF614B;
     border-radius: 3px;
     z-index: 1;
-    box-shadow: #FF614B 1.6px 1.6px 0px;
+    box-shadow: white 1.6px 1.6px 0px;
     transform-origin: 4.4px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
