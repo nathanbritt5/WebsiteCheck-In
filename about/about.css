@@ -66,14 +66,13 @@ body{
 
 .logo-top{
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     top: calc(10px + 1vh);
     margin-left: calc(15px + 1vw);
     background: url(../images/logo-cropped.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 9999;
 }
 
 @media (max-height: 360px){
