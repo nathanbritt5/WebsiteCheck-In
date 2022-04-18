@@ -317,8 +317,6 @@ p{
     .menu {
         width: calc(100vw - 98px);
         margin-left: calc(-100vw + 54px);
-        padding-top: 100px;
-        padding-bottom: 0;
         text-align: center;
     }
 }
@@ -327,15 +325,21 @@ p{
     .menu {
         width: 300px;
         margin-left: -345px;
-        padding-top: 100px;
-        padding-bottom: 0;
     }
 }
 
-@media (max-width: 800px) and (max-height: 360px){
+@media (max-width: 500px) and (max-height: 360px){
     .menu {
         width: calc(100vw - 98px);
         margin-left: calc(-100vw + 54px);
+        padding-top: 45px;
+        padding-bottom: 55px;
+        text-align: center;
+    }
+}
+
+@media (max-height: 360px){
+    .menu {
         padding-top: 45px;
         padding-bottom: 55px;
         text-align: center;
