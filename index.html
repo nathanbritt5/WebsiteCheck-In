@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui"/>
 		<meta name="author" content="Nathan Britt and Cecily Davis"/>
-		<title>Third Eye Curiosities</title>
+		<title>Third Eye Curiosities | Home</title>
 		<link rel="shortcut icon" href="images/logo.png"/>
 		<link rel="stylesheet" href="styles.css"/>
 		<script src="https://kit.fontawesome.com/4077adc3ea.js" crossorigin="anonymous"></script>
@@ -21,21 +21,21 @@
 				};
 			</script>
 
-		<div class="header-background"></div>
+		<div id=blur class="header-background"></div>
 
-		<a class="logo-top" href="index.html"></a>
+<a class="logo-top" href="index.html"></a>
 
 <div class="navbox">
 		<nav role="navigation">
-			<div id="menuToggle">
+			<div class="menuToggle">
 			  <input type="checkbox"/>
 				<span></span>
 				<span></span>
 				<span></span>
-			<ul id="menu">
+			<ul class="menu">
 			  <li><a href="index.html">Home</a></li>
 			  <li><a href="about/about.html">About</a></li>
-			  <li><a href="#">Info</a></li>
+			  <li><a href="products/products.html">Products</a></li>
 			  <li><a href="#">Contact</a></li>
 			</ul>
 		   </div>
@@ -65,17 +65,25 @@
 			<img src="images/RecordPlayer.png">
 		</div>
 
-	<div class="body-background"></div>
+	<div class="placeholder"></div>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script type="text/javascript">
-            $(window).scroll(function(){
-                var scroll = $(window).scrollTop();
-                $('.header-background').css({
-                    filter:"blur(" + (scroll/40) + "px)"
-                })
-            })
+window.onscroll = function() {blur()};
+
+function blur() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("blur").className = "header-background blur";
+  } else {
+    document.getElementById("blur").className = "header-background";
+  }
+}
 </script>
+
+
+
+
+
 <script>
 var mybutton = document.getElementById("BtnContain");
 
@@ -94,7 +102,22 @@ function topFunction() {
 document.body.scrollTo({top: 0, behavior: 'smooth'});
 document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
 }
-        </script>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	</body>
 </html>
