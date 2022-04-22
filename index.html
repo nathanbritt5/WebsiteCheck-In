@@ -11,6 +11,8 @@
 	</head>
 
 	<body>
+
+		<!--Loading screen-->
 			
 			<div class="loader"><img src="images/record-spin.gif"></div>
 			
@@ -23,24 +25,47 @@
 
 		<div id=blur class="header-background"></div>
 
-<a class="logo-top" href="index.html"></a>
+	<a class="logo-top" href="index.html"></a>
 
+<!--Navbar-->
 <div class="navbox">
-		<nav role="navigation">
-			<div class="menuToggle">
-			  <input type="checkbox"/>
+	<nav role="navigation">
+		<div class="menuToggle">
+			<input type="checkbox"/>
 				<span></span>
 				<span></span>
 				<span></span>
+
 			<ul class="menu">
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="about/about.html">About</a></li>
-			  <li><a href="products/products.html">Products</a></li>
-			  <li><a href="#">Contact</a></li>
+			<div class="menu-container">
+					<li>
+						<ul class="socials">
+							<li><a href="https://www.facebook.com/thirdeyecuriosities/" class="fa fa-facebook"></a></li>
+							<li><a href="https://www.instagram.com/third_eye_curiosities/?hl=en" class="fa fa-instagram" id="insta"></a></li>
+							<li><a href="https://www.google.com/search?q=third+eye+curiosities&oq=th&aqs=chrome.0.69i59j69i57j0i433i512j46i199i433i465i512j46i433i512j69i60l3.550j0j7&sourceid=chrome&ie=UTF-8#lrd=0x887ea0fae71aaaab:0x8b90439b2231c385,1,,," class="fa fa-google"></a></li>
+							<li><a href="https://www.yelp.com/biz/third-eye-curiosities-jackson" class="fa fa-yahoo"></a></li>
+							<li><a href="mailto:thirdeyecuriosities@gmail.com"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</li>
+				<li class="nav-animate nav-margin"><a href="index.html">Home</a></li>
+				<li class="nav-animate"><a href="about/about.html">About</a></li>
+				<li class="nav-animate"><a href="products/products.html">Products</a></li>
+				<li class="nav-animate"><a href="records/records.html">Records</a></li>
+				<li class="nav-animate"><a href="contact/contact.html">Contact</a></li>
+				<li class="nav-animate"><a href="gallery/gallery.html">Gallery</a></li>
+				<li>
+					<ul class="nav-contact">
+						<li class="nav-animate"><a href="tel:7312676803">731.267.6803</a><br>
+						<a href="mailto:thirdeyecuriosities@gmail.com">thirdeyecuriosities@gmail.com</a></li>
+					</ul>
+				</li>
+			</div>
 			</ul>
-		   </div>
-		  </nav>
-	</div>
+	   </div>
+	</nav>
+</div>
+
+<!--Record animation-->
 
 	<div id="BtnContain">
 	<input type="image" src="images/Top.png" onclick="topFunction()" id="myBtn" title="Go to top"></input>
@@ -65,7 +90,7 @@
 			<img src="images/RecordPlayer.png">
 		</div>
 
-	<div class="placeholder"></div>
+<div class="placeholder"></div>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script type="text/javascript">
@@ -108,9 +133,28 @@ document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
 
 
 
-
-
-
+<!--Footer-->
+<footer>
+	<div class="footer-container">
+		<div class="footer-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about/about.html">About</a></li>
+				<li><a href="products/products.html">Products</a></li>
+				<li><a href="records/records.html">Records</a></li>
+				<li><a href="contact/contact.html">Contact</a></li>
+				<li><a href="gallery/gallery.html">Gallery</a></li>
+			</ul>
+		</div>
+		<hr style="width: 80%; height: 0.5px; border-width: 0; color: gray; background-color: gray;">
+		<div class="footer-info">
+			<p>
+				Third Eye Curiosities
+				<hr style="width: 20%; height: 0.5px; border-width: 0; color: gray; background-color: gray;">
+				<div class="nav-animate footer-links"><a href="https://www.google.com/maps?q=116%20E.%20Baltimore,%20Jackson,%20TN,%2038301">116 E. Baltimore, Jackson TN, 38301</a><br><a href="tel:7312676803">731.267.6803</a><a id="divider">|</a><a href="mailto:thirdeyecuriosities@gmail.com">Email Us!</a></div>
+			</p>
+		</div>
+</footer>
 
 
 

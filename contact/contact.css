@@ -234,55 +234,54 @@ p{
     font-size: 1%;
 }
 
+.top-text{
+    text-align: left;
+    text-shadow: #ffce48 2px 2px 1px;
+}
 
+.top-image img{
+    float: right;
+    width: 50vw;
+    height: auto;
+}
 
+.middle-text{
+    text-align: right;
+}
 
+.middle-image img{
+    float: left;
+    width: 50vw;
+    height: auto;
+}
 
+.bottom-text{
+    text-align: left;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bottom-image img{
+    float: right;
+    width: 50vw;
+    height: auto;
+}
 
 /*Media Queries (Responsiveness)*/
 
 @media screen and (max-width: 700px) {
     .header-background {
-        background-image: url(../images/JewelryBox.jpg);
+        background-image: url(../images/HunterEyeCuriosities.jpeg);
     }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .header-background {
-        background-image: url(../images/Fisheye.jpg);
+        background-image: url(../images/Hunter.jpg);
     }
 }
 
 @media screen and (min-width: 1025px) {
     .header-background {
-	    background-image: url(../images/RecordShelfWall.jpg);
+	    background-image: url(../images/HunterAndCamGuitar.jpg);
    }
 }
 
@@ -363,41 +362,4 @@ p{
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
         font-size: 35px;
    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section-container img{
-    border-radius: 50%;
-  margin-top: 100px;
-  width: 19%;
-}
-
-.section-container{
-	height: 600px;
-	position: relative;
 }
