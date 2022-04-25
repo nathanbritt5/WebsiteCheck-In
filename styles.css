@@ -688,10 +688,8 @@ footer{
     -moz-column-count:5;	
     -moz-column-gap:5px;	
     column-count:5;	
-    column-gap:5px;	
-    margin-left: 5vw;	
-    margin-right: 5vw;	
-    margin-top: 20vh;
+    column-gap:5px;
+	padding: 5vw;
 }
 
 #gallery img {	
