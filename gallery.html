@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 		<meta name="author" content="Nathan Britt and Cecily Davis"/>
-		<title>Third Eye Curiosities | Gallery</title>
-		<link rel="shortcut icon" href="images/logo.png"/>
-		<link rel="stylesheet" href="styles.css"/>
+		<title>Third Eye Curiosities | About</title>
+		<link rel="shortcut icon" href="../images/logo.png"/>
+		<link rel="stylesheet" href="gallery.css"/>
 		<script src="https://kit.fontawesome.com/4077adc3ea.js" crossorigin="anonymous"></script>
 	</head>
 
@@ -43,83 +43,51 @@
 
         
 
-<div class="loader"><img src="images/record-spin.gif"></div>
-      
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(window).on('load', function() {
-$(".loader").slideUp("slow");
-});
-
-function newW()
-{
-$(window).load();
-}
-setTimeout(newW, 1000);
-</script>
-
-        <div class="header-background-gallery"></div>
-
-        <a class="logo-top" href="index.html"></a>
-
-		<div class="title-top">
-			<a href="index.html">Third Eye Curiosities</a>
-		</div>
+    <div class="loader"><img src="../images/record-spin.gif"></div>
 			
-        
-        	<!--Navbar-->
-	<div class="navbox">
-		<nav role="navigation">
-			<div class="menu-toggle">
-				<input type="checkbox"/>
-					<span></span>
-					<span></span>
-					<span></span>
-	
-				<ul class="menu">
-				<div class="menu-container">
-						<li>
-							<ul class="socials">
-								<li><a href="https://www.facebook.com/thirdeyecuriosities/" class="fa fa-facebook"></a></li>
-								<li><a href="https://www.instagram.com/third_eye_curiosities/?hl=en" class="fa fa-instagram" id="insta"></a></li>
-								<li><a href="https://www.google.com/search?q=third+eye+curiosities&oq=th&aqs=chrome.0.69i59j69i57j0i433i512j46i199i433i465i512j46i433i512j69i60l3.550j0j7&sourceid=chrome&ie=UTF-8#lrd=0x887ea0fae71aaaab:0x8b90439b2231c385,1,,," class="fa fa-google"></a></li>
-								<li><a href="https://www.yelp.com/biz/third-eye-curiosities-jackson" class="fa fa-yahoo"></a></li>
-								<li><a href="mailto:thirdeyecuriosities@gmail.com"><i class="fa fa-envelope"></i></a></li>
-							</ul>
-						</li>
-						<li class="nav-animate nav-margin"><a href="index.html">Home</a></li>
-						<li class="nav-animate"><a href="about.html">About</a></li>
-						<li class="nav-animate"><a href="products.html">Products</a></li>
-						<li class="nav-animate"><a href="reviews.html">Reviews</a></li>
-						<li class="nav-animate"><a href="contact.html">Contact</a></li>
-						<li class="nav-animate"><a href="gallery.html">Gallery</a></li>
-					<li>
-						<ul class="nav-contact">
-							<li class="nav-animate"><a href="tel:7312676803">731.267.6803</a><br>
-							<a href="mailto:thirdeyecuriosities@gmail.com">thirdeyecuriosities@gmail.com</a></li>
-						</ul>
-					</li>
-				</div>
-				</ul>
-		   </div>
-		</nav>
-	</div>
+			<script>
+				window.onload = function() 
+				{
+					$('.loader').slideUp("slow");
+				};
+			</script>
 
-		<div id="to-top-button-container">
-            <input type="image" src="images/Top.png" onclick="topFunction()" id="to-top-button" title="Go to top"></input>
+        <div class="header-background"></div>
+
+        <a class="logo-top" href="../index.html"></a>
+        
+        <div class="navbox">
+                <nav role="navigation">
+                    <div class="menuToggle">
+                      <input type="checkbox"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <ul class="menu">
+                      <li><a href="../index.html">Home</a></li>
+                      <li><a href="../about/about.html">About</a></li>
+                      <li><a href="../products/products.html">Products</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                   </div>
+                  </nav>
+            </div>
+        
+            <div id="BtnContain">
+            <input type="image" src="../images/Top.png" onclick="topFunction()" id="myBtn" title="Go to top"></input>
             </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script type="text/javascript">
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
-                $('.header-background-gallery').css({
+                $('.header-background').css({
                     filter:"blur(" + (scroll/40) + "px)"
                 })
             })
         </script>
         <script>
-            var mybutton = document.getElementById("to-top-button-container");
+            var mybutton = document.getElementById("BtnContain");
             
             window.onscroll = function() {scrollFunction()};
             
@@ -142,63 +110,35 @@ setTimeout(newW, 1000);
 
         <div id="gallery">
   
-            <img src="images/Jacket.jpg">
-            <img src="images/Jewelry.jpg">
-            <img src="images/RecordShelfWall.jpg">
-            <img src="images/WholeStore.jpg">
-            <img src="images/Guitar.jpg">
-            <img src="images/JewelryBox.jpg">
-            <img src="images/WholeStore.jpg">
-            <img src="images/ViynlUpClose.jpg">
-            <img src="images/Antique.jpg">
-            <img src="images/Door.jpg">
-            <img src="images/Fisheye.jpg">
-            <img src="images/Guitar.jpg">
-            <img src="images/Hunter.jpg">
-            <img src="images/RockAndPop.jpg">
-            <img src="images/Hunter2.jpg">
-            <img src="images/HunterAndTupac.jpg">
-            <img src="images/PolaroidWall.jpg">
+            <img src="../images/Jacket.jpg">
+            <img src="../images/Jewelry.jpg">
+            <img src="../images/RecordShelfWall.jpg">
+            <img src="../images/WholeStore.jpg">
+            <img src="../images/Guitar.jpg">
+            <img src="../images/JewelryBox.jpg">
+            <img src="../images/WholeStore.jpg">
+            <img src="../images/ViynlUpClose.jpg">
+            <img src="../images/Antique.jpg">
+            <img src="../images/Door.jpg">
+            <img src="../images/Fisheye.jpg">
+            <img src="../images/cameroncontact.jpg">
+            <img src="../images/Hunter.jpg">
+            <img src="../images/RockAndPop.jpg">
+            <img src="../images/Hunter2.jpg">
+            <img src="../images/HunterAndTupac.jpg">
+            <img src="../images/PolaroidWall.jpg">
+            <img src="../images/ettajames.jpg">
+            <img src="../images/45.jpg">
+            <img src="../images/bbking.jpg">
+            <img src="../images/genre.jpg">
+            <img src="../images/Hunter1.jpg">
+            <img src="../images/neon80.jpg">
+            <img src="../images/new.jpg">
+            <img src="../images/HunterAndCamGuitar.jpg"
+            
+
            
         </div>
-
-				<!--Footer-->
-				<footer>
-					<div class="footer-container">
-						<div class="footer-nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="products.html">Products</a></li>
-								<li><a href="reviews.html">Reviews</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
-							</ul>
-						</div>
-						<hr style="width: 80%; height: 0.5px; border-width: 0; color: gray; background-color: gray;">
-						<div class="footer-info">
-							<p>
-							Third Eye Curiosities
-							<div class="hours">
-								<p>HOURS: Monday - Saturday 11am - 5:30pm</p>
-							</div>
-								<hr style="width: 20%; height: 0.5px; border-width: 0; color: gray; background-color: gray;">
-								<div class="nav-animate footer-links">
-									<a href="https://www.google.com/maps?q=116%20E.%20Baltimore,%20Jackson,%20TN,%2038301">116 E. Baltimore, Jackson TN, 38301</a><br>
-									<a href="tel:7312676803"><i class="fa fa-phone"></i> 731.267.6803</a>
-									<span id="divider">|</span>
-									<a href="mailto:thirdeyecuriosities@gmail.com"><i class="fa fa-envelope"></i> Email Us!</a>
-								</div>
-							</p>
-						</div>
-						<ul class="socials-footer">
-							<li><a href="https://www.facebook.com/thirdeyecuriosities/" class="fa fa-facebook"></a></li>
-							<li><a href="https://www.instagram.com/third_eye_curiosities/?hl=en" class="fa fa-instagram" id="insta"></a></li>
-							<li><a href="https://www.google.com/search?q=third+eye+curiosities&oq=th&aqs=chrome.0.69i59j69i57j0i433i512j46i199i433i465i512j46i433i512j69i60l3.550j0j7&sourceid=chrome&ie=UTF-8#lrd=0x887ea0fae71aaaab:0x8b90439b2231c385,1,,," class="fa fa-google"></a></li>
-							<li><a href="https://www.yelp.com/biz/third-eye-curiosities-jackson" class="fa fa-yahoo"></a></li>
-							<li><a href="mailto:thirdeyecuriosities@gmail.com"><i class="fa fa-envelope"></i></a></li>
-						</ul>
-				</footer>
 
         <script>
             let darkBoxVisible = false;
