@@ -1,7 +1,14 @@
+/* Futura Font */
+@font-face {
+	font-family: "Futura";
+	src: url("fonts/Futura/futura\ medium\ bt.ttf") format('truetype');
+	font-style: normal;
+}
+
 body{
     margin: 0;
     overflow-x: hidden;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-family: Futura, Trebuchet MS, Arial, sans-serif
 }
 
 .body-content{
@@ -664,7 +671,7 @@ footer{
 	}
 
 	.title-top a{
-			font-size: calc(18px + 1vw);
+		font-size: calc(18px + 1vw);
 	}
 }
 

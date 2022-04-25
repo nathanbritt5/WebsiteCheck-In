@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 		<meta name="author" content="Nathan Britt and Cecily Davis"/>
-		<title>Third Eye Curiosities | About</title>
+		<title>Third Eye Curiosities | Contact</title>
 		<link rel="shortcut icon" href="../images/logo.png"/>
 		<link rel="stylesheet" href="contact.css"/>
 		<script src="https://kit.fontawesome.com/4077adc3ea.js" crossorigin="anonymous"></script>
@@ -45,14 +45,20 @@
 	
 			
 	
-		<div class="loader"><img src="../images/record-spin.gif"></div>
-				
-				<script>
-					window.onload = function() 
-					{
-						$('.loader').slideUp("slow");
-					};
-				</script>
+	<div class="loader"><img src="../images/record-spin.gif"></div>
+      
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script>
+	$(window).on('load', function() {
+  	$(".loader").slideUp("slow");
+  	});
+
+  	function newW()
+  	{
+  	$(window).load();
+  	}
+  	setTimeout(newW, 1000);
+  	</script>
 	
 			<div class="header-background"></div>
 	

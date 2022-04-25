@@ -14,14 +14,20 @@
 
 		<!--Loading screen-->
 
-  			<div class="loader"><img src="../images/record-spin.gif"></div>
+		<div class="loader"><img src="../images/record-spin.gif"></div>
       
-      		<script>
-        		window.onload = function() 
-        		{
-          		$('.loader').slideUp("slow");
-        		};
-    		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  	<script>
+	  	$(window).on('load', function() {
+	  	$(".loader").slideUp("slow");
+	  	});
+
+	  	function newW()
+	  	{
+	  	$(window).load();
+	  	}
+	  	setTimeout(newW, 1000);
+	  	</script>
 
         <div class="header-background"></div>
 

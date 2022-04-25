@@ -8,20 +8,29 @@
 		<link rel="shortcut icon" href="images/logo.png"/>
 		<link rel="stylesheet" href="styles.css"/>
 		<script src="https://kit.fontawesome.com/4077adc3ea.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 
 		<!--Loading screen-->
 			
-			<div class="loader"><img src="images/record-spin.gif"></div>
-			
-			<script>
-				window.onload = function() 
-				{
-					$('.loader').slideUp("slow");
-				};
-			</script>
+		<div class="loader"><img src="images/record-spin.gif"></div>
+      
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  	<script>
+	  	$(window).on('load', function() {
+	  	$(".loader").slideUp("slow");
+	  	});
+
+	  	function newW()
+	  	{
+	  	$(window).load();
+	  	}
+	  	setTimeout(newW, 1000);
+	  	</script>
 
 		<div id=blur class="header-background"></div>
 

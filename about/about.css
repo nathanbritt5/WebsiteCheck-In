@@ -1,3 +1,10 @@
+/* Futura Font */
+@font-face {
+	font-family: "Futura";
+	src: url("fonts/Futura/futura\ medium\ bt.ttf") format('truetype');
+	font-style: normal;
+}
+
 body{
 	overflow-x: hidden;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -536,13 +543,13 @@ footer{
 
 @media screen and (max-width: 700px) {
     .header-background {
-        background-image: url(../images/Hunter.jpg);
+        background-image: url(../images/HunterEyeCuriosities.jpeg);
     }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
     .header-background {
-        background-image: url(../images/HunterEyeCuriosities.jpeg);
+        background-image: url(../images/Hunter.jpg);
     }
 }
 

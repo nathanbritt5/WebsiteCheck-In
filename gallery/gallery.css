@@ -1,3 +1,10 @@
+/* Futura Font */
+@font-face {
+	font-family: "Futura";
+	src: url("fonts/Futura/futura\ medium\ bt.ttf") format('truetype');
+	font-style: normal;
+}
+
 body{
 	overflow-x: hidden;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
