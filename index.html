@@ -8,9 +8,6 @@
 		<link rel="shortcut icon" href="images/logo.png"/>
 		<link rel="stylesheet" href="styles.css"/>
 		<script src="https://kit.fontawesome.com/4077adc3ea.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
@@ -32,11 +29,11 @@
 	  	setTimeout(newW, 1000);
 	  	</script>
 
-		<div id=blur class="header-background"></div>
+		<div id=blur class="header-background-home"></div>
 
 	<a class="logo-top" href="index.html"></a>
 
-		<div class="title-top">
+		<div class="title-top-home">
 		<a href="index.html">Third Eye Curiosities</a>
 	</div>
         
@@ -44,7 +41,7 @@
 <!--Navbar-->
 <div class="navbox">
 	<nav role="navigation">
-		<div class="menuToggle">
+		<div class="menu-toggle">
 			<input type="checkbox"/>
 				<span></span>
 				<span></span>
@@ -62,11 +59,11 @@
 						</ul>
 					</li>
 					<li class="nav-animate nav-margin"><a href="index.html">Home</a></li>
-					<li class="nav-animate"><a href="about/about.html">About</a></li>
-					<li class="nav-animate"><a href="products/products.html">Products</a></li>
-					<li class="nav-animate"><a href="reviews/reviews.html">Reviews</a></li>
-					<li class="nav-animate"><a href="contact/contact.html">Contact</a></li>
-					<li class="nav-animate"><a href="gallery/gallery.html">Gallery</a></li>
+					<li class="nav-animate"><a href="about.html">About</a></li>
+					<li class="nav-animate"><a href="products.html">Products</a></li>
+					<li class="nav-animate"><a href="reviews.html">Reviews</a></li>
+					<li class="nav-animate"><a href="contact.html">Contact</a></li>
+					<li class="nav-animate"><a href="gallery.html">Gallery</a></li>
 				<li>
 					<ul class="nav-contact">
 						<li class="nav-animate"><a href="tel:7312676803">731.267.6803</a><br>
@@ -81,8 +78,8 @@
 
 <!--Record animation-->
 
-	<div id="BtnContain">
-	<input type="image" src="images/Top.png" onclick="topFunction()" id="myBtn" title="Go to top"></input>
+	<div id="to-top-button-container">
+	<input type="image" src="images/Top.png" onclick="topFunction()" id="to-top-button" title="Go to top"></input>
 	</div>
 
 		<div class="record-stack">
@@ -110,9 +107,9 @@ window.onscroll = function() {blur()};
 
 function blur() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("blur").className = "header-background blur";
+    document.getElementById("blur").className = "header-background-home blur";
   } else {
-    document.getElementById("blur").className = "header-background";
+    document.getElementById("blur").className = "header-background-home";
   }
 }
 </script>
@@ -122,7 +119,7 @@ function blur() {
 
 
 <script>
-var mybutton = document.getElementById("BtnContain");
+var mybutton = document.getElementById("to-top-button-container");
 
 window.onscroll = function() {scrollFunction()};
 
@@ -157,11 +154,11 @@ document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
 		<div class="footer-nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="about/about.html">About</a></li>
-				<li><a href="products/products.html">Products</a></li>
-				<li><a href="reviews/reviews.html">Reviews</a></li>
-				<li><a href="contact/contact.html">Contact</a></li>
-				<li><a href="gallery/gallery.html">Gallery</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
 			</ul>
 		</div>
 		<hr style="width: 80%; height: 0.5px; border-width: 0; color: gray; background-color: gray;">
@@ -175,7 +172,7 @@ document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
 				<div class="nav-animate footer-links">
 					<a href="https://www.google.com/maps?q=116%20E.%20Baltimore,%20Jackson,%20TN,%2038301">116 E. Baltimore, Jackson TN, 38301</a><br>
 					<a href="tel:7312676803"><i class="fa fa-phone"></i> 731.267.6803</a>
-					<a id="divider">|</a>
+					<span id="divider">|</span>
 					<a href="mailto:thirdeyecuriosities@gmail.com"><i class="fa fa-envelope"></i> Email Us!</a>
 				</div>
 			</p>
