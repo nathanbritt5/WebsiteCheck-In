@@ -8,20 +8,27 @@
 body{
     margin: 0;
     overflow-x: hidden;
-	font-family: Futura, Trebuchet MS, Arial, sans-serif
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
 .body-content{
 	background-color: white;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-.blur {
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+.blurred-img { 
+	opacity: 0; 
+	background-image: url(images/image.jpg);
+	margin: 0;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		height: 100vh;
+		margin-bottom: -100vh;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0px;
+		z-index: 998;
 }
 
 /*Loading screen*/
@@ -440,6 +447,10 @@ footer{
 	margin-top: 40px;
 }
 
+.footer-links a:hover {
+	cursor: pointer;
+}
+
 .footer-links a i{
 	cursor: pointer;
 	color: #469297;
@@ -471,7 +482,7 @@ footer{
 
 .socials-footer{
 	margin-top: 40px;
-	margin-bottom: -10px;
+	margin-bottom: 45px;
 }
 
 .socials-footer li a i:hover {
@@ -516,6 +527,7 @@ footer{
 	height: 8vh;
 	margin-bottom: 90vh;
 	text-shadow: 1px 1px #FF614B, 1.5px 1.5px #000000;
+	text-align: center;
 }
 
 .title-top-home{
@@ -528,6 +540,7 @@ footer{
 	height: 10vh;
 	margin-bottom: -10vh;
 	text-shadow: 1px 1px #FF614B, 1.5px 1.5px #000000;
+	text-align: center;
 }
 
 .title-top a{
@@ -548,8 +561,6 @@ footer{
 	letter-spacing: 2px;
 }
 
-/* About Page */
-
 /* Header */
 
 .center-text {
@@ -567,7 +578,33 @@ footer{
     text-shadow: 0px 0px 30px #000000;
 }
 
-/* Main content*/
+/* Main Content for Pages */
+
+.home-text{
+	padding: 50px;
+	margin: 25px;
+}
+
+.home-text h1{
+	text-align: center;
+	font-size: 48px;
+	color: #FF614B;
+	text-shadow: 1.5px 1.5px white, 2px 2px #000000;
+}
+
+.home-text h2{
+	text-align: center;
+	font-size: 26px;
+	margin-top: -30px;
+}
+
+.home-text p{
+	text-align: center;
+	font-size: 32px;
+	padding-bottom: 20px;
+	color: #000000;
+	text-shadow: 1.5px 1.5px rgb(232, 232, 232), 2px 2px #469297;
+}
 
 .content{
 	margin-right: 5vw;
@@ -577,7 +614,7 @@ footer{
 
 .from{
     width: 100%;
-    font-size: 3vw;
+    font-size: 3.5vw;
 	text-align: center;
 }
 
@@ -597,12 +634,24 @@ footer{
     flex: 50%;
     text-align: center;
 	width: 45vw;
+	height: calc(45vw / 1.49926793558);
 	margin-top: 40px;
 }
 
 .box p{
-    font-size: 3vw;
-	width: 42vw;
+	text-align: center;
+    font-size: calc(18px + 1.5vw);
+	width: 45vw;
+}
+
+#about-para{
+	font-size: calc(14px + 1.5vw);
+}
+
+.box h1{
+	text-align: center;
+    font-size: calc(32px + 1.5vw);
+	width: 45vw;
 }
 
 .img-cont {
@@ -626,7 +675,8 @@ footer{
 	justify-content: center;	
 	align-items: center;	
 	height: 200px;	
-}	
+}
+
 .review-button {	
 	display: inline-block;	
 	padding: 0.75rem 1.25rem;	
@@ -677,7 +727,7 @@ footer{
 .center{		
 	margin: auto;	
 	max-width: 600px;	
-	margin-top: 60px;	
+	padding-top: 60px;	
 	margin-bottom: 60px;
 }
 
@@ -713,12 +763,126 @@ footer{
 	background-color:#333; 
 	overflow: hidden; 
 	text-align:center;
+	z-index: 9999999999;
 }
 
 .darkboximg {
 	padding:5%; 
 	max-width: 80vw; 
 	max-height: 90vh;
+}
+
+.image-slideshow {
+	margin: 2%;
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #4692973e;
+}
+
+.slider {
+	width: 90%;
+	max-width: 900px;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 20vw;
+	margin-bottom: 20vw;
+}
+  
+.slides {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: hidden;
+}
+
+.slides::-webkit-scrollbar {
+	display: none;
+}
+  
+.slides div {
+	scroll-snap-align: start;
+	flex-shrink: 0;
+	width: 100%;
+	margin-right: 50px;
+	border-radius: 10px;
+	background: #eee;
+	transform-origin: center center;
+	transform: scale(1);
+	transition: transform 0.5s;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slides div img{
+	width: 100%;
+	height: calc(90vw / 1.49926793558 - 50px);
+	max-height: calc(900px / 1.49926793558 - 50px);
+	border-radius: 10px;
+	transform-origin: center center;
+	transition: transform 0.5s;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 100px;
+}
+
+.slider-labels{
+	padding: 20px;
+}
+
+.slider-info{
+	text-align: center;
+	font-size: 28px;
+	color: #FF614B;
+	text-shadow: 1.5px 1.5px white, 2px 2px #000000;
+}
+  
+.slider a {
+	display: inline-flex;
+	width: 18%;
+	max-width: 75px;
+	height: 14.5vw;
+	max-height: 75px;
+	font-size: xx-large;
+	background: rgb(247, 247, 247);
+	color: #FF614B;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-right: 1px;
+	margin-left: 1px;
+	position: relative;
+}
+
+.slider a:hover {
+  background-color: #666;
+  color: white;
+}
+
+#image-text-slider{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #eee;
+	text-shadow: 1px 1px #FF614B, 2.2px 2.2px #000000, -2.2px -2.2px 3px #000000;
+	font-size: calc(12px + 2vw);
+	width: 80%;
+}
+
+.facebook-frame{
+	width: 100vw;
+	text-align: center;
+	margin-bottom: 60px;
 }
 
 @keyframes idle {
@@ -763,7 +927,7 @@ footer{
 	}
 
 	.header-background-products {	
-		background-image: url(images/HunterEyeCuriosities.jpeg);
+		background-image: url(images/THIRDEYESTORE0059.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -774,7 +938,7 @@ footer{
     }
 
 	.header-background-reviews {	
-		background-image: url(images/HunterEyeCuriosities.jpeg);
+		background-image: url(images/THIRDEYESTORE0022.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -785,7 +949,7 @@ footer{
     }
 
 	.header-background-contact {	
-		background-image: url(images/HunterEyeCuriosities.jpeg);
+		background-image: url(images/THIRDEYESTORE0070.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -796,7 +960,7 @@ footer{
     }
 
 	.header-background-gallery {	
-		background-image: url(images/HunterEyeCuriosities.jpeg);
+		background-image: url(images/THIRDEYESTORE0125.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -835,7 +999,7 @@ footer{
 	}
 
 	.header-background-products {	
-		background-image: url(images/Hunter.jpg);
+		background-image: url(images/THIRDEYESTORE0047.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -846,7 +1010,7 @@ footer{
     }
 
 	.header-background-reviews {	
-		background-image: url(images/Hunter.jpg);
+		background-image: url(images/THIRDEYESTORE0081.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -857,7 +1021,7 @@ footer{
     }
 
 	.header-background-contact {	
-		background-image: url(images/Hunter.jpg);
+		background-image: url(images/ThirdEye0787.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -868,7 +1032,7 @@ footer{
     }
 
 	.header-background-gallery {	
-		background-image: url(images/Hunter.jpg);
+		background-image: url(images/THIRDEYESTORE0125.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -907,7 +1071,7 @@ footer{
 	}
 
 	.header-background-products {	
-		background-image: url(images/HunterAndCamGuitar.jpg);
+		background-image: url(images/WoodenShelf.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -918,7 +1082,7 @@ footer{
 	}
 
 	.header-background-reviews {	
-		background-image: url(images/HunterAndCamGuitar.jpg);
+		background-image: url(images/THIRDEYESTORE0027.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -929,7 +1093,7 @@ footer{
 	}
 
 	.header-background-contact {	
-		background-image: url(images/HunterAndCamGuitar.jpg);
+		background-image: url(images/THIRDEYESTORE0067.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -940,7 +1104,7 @@ footer{
 	}
 
 	.header-background-gallery {	
-		background-image: url(images/HunterAndCamGuitar.jpg);
+		background-image: url(images/THIRDEYESTORE0125.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -959,11 +1123,33 @@ footer{
 	.title-top-home a{
 		font-size: calc(16px + 1vw);
 	}
+
+	.subtitle-home{
+		font-size: calc(13px + 1vw);
+	}
 }
 
 @media (min-width: 701px){
 	.center-text {
 		font-size: 60px;
+	}
+
+	.box{
+		position: relative;
+	}
+
+	.text-box-center{
+		position: absolute;
+		top: 50%; 
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.box img{
+		position: absolute;
+		top: 50%; 
+		left: 50%;
+		transform: translate(-50%,-50%);
 	}
 }
 
@@ -1019,6 +1205,10 @@ footer{
 	.title-top-home a{
 		font-size: calc(16px + 1vw);
 	}
+
+	.subtitle-home{
+		font-size: calc(13px + 1vw);
+	}
 }
 
 @media (min-height: 361px) and (max-height: 600px){
@@ -1072,6 +1262,10 @@ footer{
 
 	.title-top-home a{
 		font-size: calc(18px + 1vw);
+	}
+
+	.subtitle-home{
+		font-size: calc(15px + 1vw);
 	}
 }
 
@@ -1127,6 +1321,10 @@ footer{
 	.title-top-home a{
 		font-size: calc(18px + 1vw);
 		letter-spacing: 2px;
+	}
+
+	.subtitle-home{
+		font-size: calc(15px + 1vw);
 	}
 }
 
@@ -1184,6 +1382,10 @@ footer{
 		font-size: calc(16px + 1vw);
 		letter-spacing: 0;
 	}
+
+	.subtitle-home{
+		font-size: calc(13px + 1vw);
+	}
 }
 
 @media (min-width: 701px) and (max-width: 1025px){
@@ -1193,6 +1395,10 @@ footer{
 
 	.title-top-home a{
 		font-size: calc(16px + 1vw);
+	}
+
+	.subtitle-home{
+		font-size: calc(13px + 1vw);
 	}
 }
 
@@ -1250,9 +1456,17 @@ footer{
 		margin-top: 40px;
 	}
 	.box p{
-		font-size: 3vh;
+		font-size: 30px;
 		width: 90vw;
+		text-align: center;
 	}
+
+	.box h1{
+		font-size: 50px;
+		width: 90vw;
+		text-align: center;
+	}
+
 	.img-cont {
 		width: 90vw;
 	}
