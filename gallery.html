@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta name="author" content="Nathan Britt and Cecily Davis"/>
+		<title>Third Eye Curiosities | About</title>
+		<link rel="shortcut icon" href="../images/logo.png"/>
+		<link rel="stylesheet" href="gallery.css"/>
+		<script src="https://kit.fontawesome.com/4077adc3ea.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+        <script>
+            let grid = document.querySelector('.grid');
+            let msnry = new Masonry( grid, {
+                itemSelector: 'none', // select none at first
+                columnWidth: '.grid__col-sizer',
+                gutter: '.grid__gutter-sizer',
+                percentPosition: true,
+                stagger: 30,
+                // nicer reveal transition
+                visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+                hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+            });
+            // initial items reveal
+            imagesLoaded( grid, function() {
+                grid.classList.remove('are-images-unloaded');
+                msnry.options.itemSelector = '.grid__item';
+                let items = grid.querySelectorAll('.grid__item');
+                msnry.appended( items );
+            });
+            // init Infinte Scroll
+            let infScroll = new InfiniteScroll( grid, {
+                path: getPenPath,
+                append: '.grid__item',
+                outlayer: msnry,
+                status: '.page-load-status',
+            });
+
+        </script>
+
+        
+
+    <div class="loader"><img src="../images/record-spin.gif"></div>
+			
+			<script>
+				window.onload = function() 
+				{
+					$('.loader').slideUp("slow");
+				};
+			</script>
+
+        <div class="header-background"></div>
+
+        <a class="logo-top" href="../index.html"></a>
+        
+        <div class="navbox">
+                <nav role="navigation">
+                    <div class="menuToggle">
+                      <input type="checkbox"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <ul class="menu">
+                      <li><a href="../index.html">Home</a></li>
+                      <li><a href="../about/about.html">About</a></li>
+                      <li><a href="../products/products.html">Products</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                   </div>
+                  </nav>
+            </div>
+        
+            <div id="BtnContain">
+            <input type="image" src="../images/Top.png" onclick="topFunction()" id="myBtn" title="Go to top"></input>
+            </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                $('.header-background').css({
+                    filter:"blur(" + (scroll/40) + "px)"
+                })
+            })
+        </script>
+        <script>
+            var mybutton = document.getElementById("BtnContain");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+            
+            document.body.scrollTo({top: 0, behavior: 'smooth'});
+            document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+            }
+                    </script>
+
+        <div class="center-text">Image Gallery</div>
+
+        <div id="gallery">
+  
+            <img src="../images/RecordShelfWall.jpg">
+            <img src="../images/WholeStore.jpg">
+            <img src="../images/Guitar.jpg">
+            <img src="../images/ViynlUpClose.jpg">
+            <img src="../images/Door.jpg">
+            <img src="../images/Fisheye.jpg">
+            <img src="../images/cameroncontact.jpg">
+            <img src="../images/Hunter.jpg">
+            <img src="../images/RockAndPop.jpg">
+            <img src="../images/Hunter2.jpg">
+            <img src="../images/HunterAndTupac.jpg">
+            <img src="../images/PolaroidWall.jpg">
+            <img src="../images/ettajames.jpg">
+            <img src="../images/45.jpg">
+            <img src="../images/bbking.jpg">
+            <img src="../images/genre.jpg">
+            <img src="../images/Hunter1.jpg">
+            <img src="../images/neon80.jpg">
+            <img src="../images/new.jpg">
+            <img src="../images/HunterAndCamGuitar.jpg">
+            <img src="../images/RecordPlayerWall.jpg">
+            <img src="../images/gallery1.jpg">
+            <img src="../images/gallery2.jpg">
+            <img src="../images/gallery3.jpg">
+            <img src="../images/gallery4.jpg">
+            <img src="../images/gallery5.jpg">
+            <img src="../images/gallery6.jpg">
+            <img src="../images/gallery7.jpg">
+            <img src="../images/gallery8.jpg">
+            <img src="../images/gallery9.jpg">
+            <img src="../images/gallery10.jpg">
+            <img src="../images/gallery11.jpg">
+            <img src="../images/gallery12.jpg">
+            <img src="../images/gallery13.jpg">
+            <img src="../images/gallery14.jpg">
+            <img src="../images/gallery15.jpg">
+            <img src="../images/gallery16.jpg">
+            <img src="../images/gallery17.jpg">
+            <img src="../images/gallery18.jpg">
+            <img src="../images/gallery19.jpg">
+            <img src="../images/gallery20.jpg">
+    
+
+
+           
+        </div>
+
+        <script>
+            let darkBoxVisible = false;
+            function showDarkbox(url) {
+                if(!darkBoxVisible) {
+                    let x = (window.innerWidth - 1280) / 2;
+                    let y = window.scrollY + 50;
+                    // Create the darkBox
+                    var div = document.createElement("div");
+                    div.id = "darkbox";
+                    div.innerHTML = '<img class="darkboximg" src="'+url+'" />';
+                    document.body.appendChild(div);
+                    let box = document.getElementById("darkbox");
+                    box.style.left = x.toString()+"px";
+                    box.style.top = y.toString()+"px";
+                    box.style.height = 'auto';
+                    box.addEventListener('click', (event) => {
+                        // Remove it
+                        let element = document.getElementById("darkbox");
+                        element.parentNode.removeChild(element);
+                        darkBoxVisible = false;
+                    })
+                    darkBoxVisible = true;
+                } else {
+                    // Remove it
+                    let element = document.getElementById("darkbox");
+                    element.parentNode.removeChild(element);
+                    darkBoxVisible = false;
+                }
+            }
+
+            window.addEventListener('load', (event) => {
+                let images = document.querySelectorAll("img");
+                if(images !== null && images !== undefined && images.length > 0) {
+                    images.forEach(function(img) {
+                        img.addEventListener('click', (evt) => {
+                            showDarkbox(img.src);
+                        });
+                    });
+                }
+            });
+            </script>
+	</body>
+</html>
