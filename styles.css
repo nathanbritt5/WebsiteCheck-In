@@ -312,7 +312,6 @@ nav {
     box-shadow: white 1.6px 1.6px 0px;
     transform-origin: 4.4px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
 }
   
@@ -581,26 +580,29 @@ footer{
 /* Main Content for Pages */
 
 .home-text{
-	padding: 50px;
+	padding: 40px;
+	padding-left: calc(4px + 10vw);
+	padding-right: calc(4px + 10vw);
 	margin: 25px;
 }
 
 .home-text h1{
 	text-align: center;
-	font-size: 48px;
+	font-size: calc(12px + 5vw);
 	color: #FF614B;
 	text-shadow: 1.5px 1.5px white, 2px 2px #000000;
 }
 
 .home-text h2{
 	text-align: center;
-	font-size: 26px;
-	margin-top: -30px;
+	font-size: calc(16px + 2vw);
+	margin-top: calc(-4px - 2.5vh);
 }
 
 .home-text p{
 	text-align: center;
-	font-size: 32px;
+	font-size: calc(14px + 2vw);
+	margin-top: calc(-4px - 1.5vh);
 	padding-bottom: 20px;
 	color: #000000;
 	text-shadow: 1.5px 1.5px rgb(232, 232, 232), 2px 2px #469297;
@@ -1072,7 +1074,7 @@ footer{
 	}
 
 	.header-background-products {	
-		background-image: url(images/WoodenShelf.jpg);
+		background-image: url(images/THIRDEYESTORE0018\ 2.jpg);
 		margin: 0;
 		background-position: center center;
 		background-repeat: no-repeat;
