@@ -82,3 +82,6 @@ let infScroll = new InfiniteScroll( grid, {
 	outlayer: msnry,
 	status: '.page-load-status',
 });
+componentDidMount(); {
+	window.instgrm.Embeds.process();
+  }
