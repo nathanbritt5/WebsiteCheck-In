@@ -592,8 +592,8 @@ footer{
 	font-size: calc(14px + 2vw);
 	margin-top: calc(-4px - 1.5vh);
 	padding-bottom: 20px;
-	color: #000000;
-	text-shadow: 1px 1px 3px rgb(232, 232, 232);
+	color: #eee;
+	text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
 
 .content{
