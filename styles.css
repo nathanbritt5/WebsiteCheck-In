@@ -732,6 +732,7 @@ footer{
 
 .center{
 	padding-left: 20px;
+	width: 100vw;
 	margin: auto;
 	max-width: 600px;	
 	padding-top: 60px;	
@@ -1442,6 +1443,12 @@ footer{
 	}
 	#small-frame{
 		display: none;
+	}
+}
+
+@media (max-width: 615px){
+	.center{
+		padding-left: calc(1px + 2vw);
 	}
 }
 
