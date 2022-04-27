@@ -565,8 +565,8 @@ footer{
 
 .home-text{
 	padding: 40px;
-	padding-left: calc(4px + 10vw);
-	padding-right: calc(4px + 10vw);
+	padding-left: calc(10vw);
+	padding-right: calc(10vw);
 	margin: 50px;
 	background-color: #ffffff32;
 	border-radius: 50px;
@@ -592,7 +592,7 @@ footer{
 	font-size: calc(14px + 2vw);
 	margin-top: calc(-4px - 1.5vh);
 	padding-bottom: 20px;
-	color: #eee;
+	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
 
