@@ -11,4 +11,6 @@ When this class began, I was not sure about what might be my college focus. Comp
 <br>
 With any product, you want to stand out and be distinct. We wanted to make a site that was unique, functional while also attractive and interesting. One way we did this was through animation on the homepage. It took quite a bit of math and a lot of trial and error to accomplish that unique look and distinction. Additionally, another special characteristic of our site, is the way we connected with the owner of business. It is important when working with clientst to collaborate, and that is just what we did. Even though the shop was 20 miles away, We took many trips to interview the owner. He obliged by helping us with the about page and by participating photoshoots for the design of the site. <br>
 <br>
-As with any project you meet challenges. We did found it difficult to format our design for both laptop computers and mobile devices. Additionally, design elements that were diffcult included selecting an appropriate font and a navigation bar. Formatting the navigation bar took a lot of time, but works very well as part of the end product.
+As with any project you meet challenges. We did found it difficult to format our design for both laptop computers and mobile devices. Additionally, design elements that were diffcult included selecting an appropriate font and a navigation bar. Formatting the navigation bar took a lot of time, but works very well as part of the end product. <br>
+<br>
+https://nathanbritt5.github.io/WebsiteCheck-In/
