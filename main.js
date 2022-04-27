@@ -4,11 +4,9 @@ $(window).on('load', function() {
 	$(".loader").slideUp("slow");
 	});
 
-	function newW()
-	{
-	$(window).load();
-	}
-	setTimeout(newW, 1000);
+	setTimeout(function(){ 
+		$('.loader').slideUp("slow");
+	}, 2000);
 
 // Homepage Blur on Scroll //
 
@@ -59,25 +57,6 @@ function mapsSelector() {
   else
 	  window.open("https://maps.google.com/maps/dir/?daddr=35.6132567,-88.8361511&amp;ll=");
   }
-
-
-// Button Selector //
-
-var btnContainer = document.getElementById("slider-labels");
-
-var btns = btnContainer.getElementsByClassName("");
-
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
-
-    this.className += " active";
-  });
-}
 
 //Contact//
 
